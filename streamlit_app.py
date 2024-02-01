@@ -352,7 +352,7 @@ def load_embedding():
 # Cache Vector Store for future runs
 @st.cache_resource(show_spinner=lang_dict['load_vectorstore'])
 def load_vectorstore(username):
-    print(f"load_vectorstore for {username}")
+    print("load_vectorstore")
     # Get the load_vectorstore store from Astra DB
     return AstraDB(
         embedding=embedding,
